@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-image:url("images/bg.png");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#container {
+	width: 960px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container img
+{
+    display:block;
+    float:left;
+    border:0;
+}
+
+a.glow, a.glow:hover, a.glow:focus
+{
+	text-decoration: none;
+	font-weight:bold;
+	color: #29cfe8;
+	text-shadow: none;
+	-webkit-transition: 400ms linear 0s;
+	-moz-transition: 400ms linear 0s;
+	-o-transition: 400ms linear 0s;
+	transition: 400ms linear 0s;
+	outline: 0 none;
+	font-size:18px;
+}
+
+a.glow:hover, a.glow:focus
+{
+	font-weight:bold;
+	color: #29cfe8;
+	text-shadow: -0px 0px 10px #e629e8, 0px -0px 10px #e629e8;
+}
+
+.menu {
+	width: 960px;
+	height: 50px;
+	float: left;
+	color: #29cfe8;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display:inline;
+}
+
+
+.menu ul li {
+	display: inline;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#form {
+	width: 960px;
+	height: 610px;
+	float: left;
+	padding-top: 10px;
+	background-image:url(images/contentbg.png);
+}
