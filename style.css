@@ -77,3 +77,40 @@ a.glow:hover, a.glow:focus
 	padding-top: 10px;
 	background-image:url(images/contentbg.png);
 }
+/**********Events Page**********/
+.content{
+	width: 960px;
+	height: 610px;
+	float:left;
+	background-image:url(images/contentbg.png);
+}
+
+.content h1{
+	padding-top:45px;
+	padding-left:25px;
+}
+
+.content h2{
+	padding-left:25px;
+	padding-bottom: 10px;
+	color:grey;
+	font-size: 18px;
+}
+.eventBox{
+	width:280px;
+	float:left;
+	padding:15px 100px 15px 100px;
+}
+
+.eventBox h2{
+	color:white;
+	margin-top: 210px;
+	padding-left:0;
+}
+.eventBox ul{
+	list-style: none;
+}
+/**********whiskycoctails page**********/
+.slide_nav{
+	cursor:pointer;
+}
