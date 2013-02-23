@@ -6,9 +6,9 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <script>
         (new Image()).src = "images/djparties.png";
-        (new Image()).src = "images/djparties30transparent.png";
+        (new Image()).src = "images/djpartiesShine.png";
         (new Image()).src = "images/coctails.png";
-        (new Image()).src = "images/coctails30transparent.png";
+        (new Image()).src = "images/coctailsShine.png";
         
         window.onload = function(){
             var djImageCurrent = document.getElementById("djPartiesImg");
@@ -20,16 +20,16 @@
             coctailsImageCurrent.onmouseout = coctailsMouseOut;
 
             function djMouseOver(){
-                this.src="images/djparties.png";
+                this.src="images/djpartiesShine.png";
             };   
             function djMouseOut(){
-                this.src="images/djparties30transparent.png";
+                this.src="images/djparties.png";
             };
             function coctailsMouseOver(){
-                this.src="images/coctails.png";
+                this.src="images/coctailsShine.png";
             };   
             function coctailsMouseOut(){
-                this.src="images/coctails30transparent.png";
+                this.src="images/coctails.png";
             };
             // function mouseOver (newLink) {
             //     this.src = newLink;
@@ -63,7 +63,7 @@
             <h1>Browse our wide range of events</h1>
             <h2>Prim's upcoming events</h2>
         	<div class="eventBox">
-                <img src="images/coctails30transparent.png" id="coctailsImg">
+                <img src="images/coctails.png" id="coctailsImg">
                 <h2>Coctail Parties</h2>
                 <ul>
                     <li><a href="whiskycoctails.html" class="glow">05/03/2013</a> Whisky Coctails</li>
@@ -72,7 +72,7 @@
                 </ul>
             </div>
             <div class="eventBox">
-                <img src="images/djparties30transparent.png" id="djPartiesImg">
+                <img src="images/djparties.png" id="djPartiesImg">
                 <h2>DJ Parties</h2>
                 <ul>
                     <li><a href="#" class="glow">06/03/2013</a> DJ Spock's Party</li>
