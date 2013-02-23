@@ -12,31 +12,27 @@
         
         window.onload = function(){
             var djImageCurrent = document.getElementById("djPartiesImg");
-            djImageCurrent.onmouseover = djMouseOver;
-            djImageCurrent.onmouseout = djMouseOut;
+            djImageCurrent.onmouseover = function(){
+                mouseOver(djImageCurrent, "images/djpartiesShine.png"); 
+            };
+
+            djImageCurrent.onmouseout = function(){
+                mouseOut(djImageCurrent, "images/djparties.png");
+            };
             
             var coctailsImageCurrent = document.getElementById("coctailsImg");
-            coctailsImageCurrent.onmouseover = coctailsMouseOver;
-            coctailsImageCurrent.onmouseout = coctailsMouseOut;
-
-            function djMouseOver(){
-                this.src="images/djpartiesShine.png";
-            };   
-            function djMouseOut(){
-                this.src="images/djparties.png";
+            coctailsImageCurrent.onmouseover = function(){
+                mouseOver(coctailsImageCurrent, "images/coctailsShine.png");
             };
-            function coctailsMouseOver(){
-                this.src="images/coctailsShine.png";
-            };   
-            function coctailsMouseOut(){
-                this.src="images/coctails.png";
+            coctailsImageCurrent.onmouseout = function(){
+                mouseOut(coctailsImageCurrent, "images/coctails.png");
             };
-            // function mouseOver (newLink) {
-            //     this.src = newLink;
-            // };
-            // function mouseOut (regularLink){
-            //     this.src=regularLink;
-            // }; 
+            function mouseOver (image, newLink) {
+                 image.src = newLink;
+            };
+            function mouseOut (image, regularLink){
+                 image.src = regularLink;
+            }; 
         };  
     </script>
 </head>
