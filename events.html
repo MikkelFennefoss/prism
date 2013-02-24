@@ -13,26 +13,23 @@
         window.onload = function(){
             var djImageCurrent = document.getElementById("djPartiesImg");
             djImageCurrent.onmouseover = function(){
-                mouseOver(djImageCurrent, "images/djpartiesShine.png"); 
+                sourceChange(djImageCurrent, "images/djpartiesShine.png"); 
             };
 
             djImageCurrent.onmouseout = function(){
-                mouseOut(djImageCurrent, "images/djparties.png");
+                sourceChange(djImageCurrent, "images/djparties.png");
             };
             
             var coctailsImageCurrent = document.getElementById("coctailsImg");
             coctailsImageCurrent.onmouseover = function(){
-                mouseOver(coctailsImageCurrent, "images/coctailsShine.png");
+                sourceChange(coctailsImageCurrent, "images/coctailsShine.png");
             };
             coctailsImageCurrent.onmouseout = function(){
-                mouseOut(coctailsImageCurrent, "images/coctails.png");
+                sourceChange(coctailsImageCurrent, "images/coctails.png");
             };
-            function mouseOver (image, newLink) {
+            function sourceChange (image, newLink) {
                  image.src = newLink;
             };
-            function mouseOut (image, regularLink){
-                 image.src = regularLink;
-            }; 
         };  
     </script>
 </head>
