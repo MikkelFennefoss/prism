@@ -1,31 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
-
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
 	background-image:url("images/bg.png");
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 }
-
 #container {
 	width: 960px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 #container img
 {
     display:block;
     float:left;
     border:0;
 }
-
 a.glow, a.glow:hover, a.glow:focus
 {
 	text-decoration: none;
@@ -39,14 +34,12 @@ a.glow, a.glow:hover, a.glow:focus
 	outline: 0 none;
 	font-size:18px;
 }
-
 a.glow:hover, a.glow:focus
 {
 	font-weight:bold;
 	color: #29cfe8;
 	text-shadow: -0px 0px 10px #e629e8, 0px -0px 10px #e629e8;
 }
-
 .menu {
 	width: 960px;
 	height: 50px;
@@ -55,25 +48,77 @@ a.glow:hover, a.glow:focus
 	margin-left: 200px;
 	margin-top: 20px;
 }
-
 .menu ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	display:inline;
 }
-
-
 .menu ul li {
 	display: inline;
 	margin-right: 20px;
 	margin-left: 20px;
 }
-
 #form {
 	width: 960px;
 	height: 610px;
 	float: left;
 	padding-top: 10px;
 	background-image:url(images/contentbg.png);
+}
+/**********Events Page**********/
+.content{
+	width: 960px;
+	height: 610px;
+	float:left;
+	background-image:url(images/contentbg.png);
+}
+.content h1{
+	padding-top:45px;
+	padding-left:25px;
+}
+.content h2{
+	padding-left:25px;
+	padding-bottom: 10px;
+	color:grey;
+	font-size: 18px;
+}
+.eventBox{
+	width:280px;
+	float:left;
+	padding:15px 100px 15px 100px;
+}
+.eventBox h2{
+	color:white;
+	margin-top: 210px;
+	padding-left:0;
+}
+.eventBox ul{
+	list-style: none;
+}
+.eventBox img{
+	margin-left: -10px;
+}
+/**********whiskycoctails page**********/
+.slide_nav{
+	cursor: pointer;
+	margin-right: 186px;
+
+}
+#slideshow{
+	float:left;
+	width: 300px;
+	margin: 15px 0 0 25px;
+}
+#slideshow img{
+	margin-bottom: 7px;
+}
+.event_desc{
+	margin: 15px 25px 0 380px;
+}
+.event_desc h2{
+	padding-left: 0;
+}
+.event_desc p{
+	margin-bottom: 20px;
 }

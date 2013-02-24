@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>PRISM Lounge & Club - Events</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+        window.onload = function(){
+
+            (new Image()).src = "images/djparties.png";
+            (new Image()).src = "images/djpartiesShine.png";
+            (new Image()).src = "images/coctails.png";
+            (new Image()).src = "images/coctailsShine.png";
+        
+            var djImageCurrent = document.getElementById("djPartiesImg");
+            djImageCurrent.onmouseover = function(){
+                sourceChange(djImageCurrent, "images/djpartiesShine.png"); 
+            };
+            djImageCurrent.onmouseout = function(){
+                sourceChange(djImageCurrent, "images/djparties.png");
+            };
+            
+            var coctailsImageCurrent = document.getElementById("coctailsImg");
+            coctailsImageCurrent.onmouseover = function(){
+                sourceChange(coctailsImageCurrent, "images/coctailsShine.png");
+            };
+            coctailsImageCurrent.onmouseout = function(){
+                sourceChange(coctailsImageCurrent, "images/coctails.png");
+            };
+            function sourceChange (image, newLink) {
+                 image.src = newLink;
+            };
+        };  
+    </script>
+</head>
+<body>
+	<div id="container">
+    
+    	<nav>
+        	<div class="menu">
+                <ul>
+                    <li><a href="index.html" class="glow">HOME</a></li> -
+                    <li><a href="events.html" class="glow">EVENTS</a></li> -
+                    <li><a href="#" class="glow">LINK</a></li> -
+                    <li><a href="#" class="glow">LINK</a></li> -
+                    <li><a href="form.html" class="glow">FORM</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    	<header>
+			<img src="images/banner.png">
+        </header>
+        
+        <section class="content">
+            <h1>Browse our wide range of events</h1>
+            <h2>Prim's upcoming events</h2>
+        	<div class="eventBox">
+                <img src="images/coctails.png" id="coctailsImg">
+                <h2>Coctail Parties</h2>
+                <ul>
+                    <li><a href="whiskycoctails.html" class="glow">05/03/2013</a> Whisky Coctails</li>
+                    <li><a href="#" class="glow">12/03/2013</a> Burlesque & Champagne Coctails</li>
+                    <li><a href="#" class="glow">19/03/2013</a> James Bond Coctails</li>
+                </ul>
+            </div>
+            <div class="eventBox">
+                <img src="images/djparties.png" id="djPartiesImg">
+                <h2>DJ Parties</h2>
+                <ul>
+                    <li><a href="#" class="glow">06/03/2013</a> DJ Spock's Party</li>
+                    <li><a href="#" class="glow">13/03/2013</a> DJ Wollowizard</li>
+                    <li><a href="#" class="glow">19/03/2013</a> DJ Sheldon's Harlem Shake</li>
+                </ul>
+            </div>
+        </section>
+        
+        <footer>
+        	<img src="images/footer.png">
+        </footer>
+    </div>
+</body>
+</html>
