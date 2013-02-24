@@ -5,17 +5,17 @@
 <title>PRISM Lounge & Club - Events</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script>
-        (new Image()).src = "images/djparties.png";
-        (new Image()).src = "images/djpartiesShine.png";
-        (new Image()).src = "images/coctails.png";
-        (new Image()).src = "images/coctailsShine.png";
-        
         window.onload = function(){
+
+            (new Image()).src = "images/djparties.png";
+            (new Image()).src = "images/djpartiesShine.png";
+            (new Image()).src = "images/coctails.png";
+            (new Image()).src = "images/coctailsShine.png";
+        
             var djImageCurrent = document.getElementById("djPartiesImg");
             djImageCurrent.onmouseover = function(){
                 sourceChange(djImageCurrent, "images/djpartiesShine.png"); 
             };
-
             djImageCurrent.onmouseout = function(){
                 sourceChange(djImageCurrent, "images/djparties.png");
             };
