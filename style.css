@@ -17,6 +17,7 @@ body {
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 #container img
@@ -77,3 +78,112 @@ a.glow:hover, a.glow:focus
 	padding-top: 10px;
 	background-image:url(images/contentbg.png);
 }
+/*-----------------------------------------------------------------*/
+/*form styling by Dan*/
+
+table {
+	width:750px;
+	margin: 20px;
+}
+
+table tr {
+	float: left;
+}
+
+table tr+tr {
+	float: right;
+}
+
+.coloured {
+	color: #29cfe8;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+
+label {
+	padding:5px;
+	font-weight: bold;
+	font-size: 14px;
+	float:right;
+}
+
+input,textarea {
+	width: 250px;
+	background-color: #c9c9c9;
+	border: 1px solid #fff;
+	padding: 5px;
+	color: #302E2E;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+	background-color: #e629e8;
+}
+
+input:visited, textarea:visited {
+	background-color: #999;
+}
+
+textarea {
+	height: 180px;
+}
+
+.button {
+	width: 90px;
+cursor: pointer;
+}
+
+.yellow{
+	background:#29cfe8;
+}
+
+.green{
+	background:#29cfe8;
+}
+/*-------------------------------------------------------*/
+/*from jimmi, audio & ajax form */
+/*audio*/
+div.audioBox{
+	position: absolute;
+	right:0;
+	width:124px;
+}
+div.audioBtn{
+	float:left;
+	width:20px;
+	height:20px;
+	margin:25px 5px 0 5px; 
+	cursor: pointer;
+}
+div.audioBtn.play{
+	background: url('images/audio/play.png') no-repeat;
+}
+div.audioBtn.pause{
+	background: url('images/audio/pause.png') no-repeat;	
+}
+div.audioBtn.next{
+	background: url('images/audio/next.png') no-repeat;
+}
+p.trackTitle{
+	font-size: .6em;
+	color:#a3a3a3;
+}
+/*ajax form*/
+section.ajaxForm{
+	position: absolute;
+	top:50px;
+	left:80px;
+	width:800px!important;
+	height:370px!important;
+	background-image:none!important;
+	background:rgba(50,50,50,0.8);
+	transition: all 2s;
+	-webkit-transition: all 2s; 
+}
+#closeBtn{
+	float:right;
+	padding-right:10px;
+	color:#fff;
+	cursor: pointer;
+}
+/*---------------------------------------------------*/
