@@ -7,7 +7,16 @@
 </head>
 <body>
 	<div id="container">
-    
+        
+        <div class="audioBox">
+            <div id="play" class="audioBtn play"></div>
+            <div id="pause" class="audioBtn pause"></div>
+            <div id="next" class="audioBtn next"></div>
+            
+            <audio id="audioCtrl" loop></audio>
+            <p id="trackTitle" class="trackTitle"></p>
+        </div>
+
     	<nav>
         	<div class="menu">
                 <ul>
@@ -15,7 +24,7 @@
                     <li><a href="#" class="glow">LINK</a></li> -
                     <li><a href="#" class="glow">LINK</a></li> -
                     <li><a href="#" class="glow">LINK</a></li> -
-                    <li><a href="form.html" class="glow">FORM</a></li>
+                    <li><a href="form.html" class="glow" id="contactForm">FORM</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,5 +41,7 @@
         	<img src="images/footer.png">
         </footer>
     </div>
+    <script src="ajax.js"></script>
+    <script src="js.js"></script>
 </body>
 </html>
