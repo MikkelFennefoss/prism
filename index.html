@@ -21,7 +21,7 @@
         	<div class="menu">
                 <ul>
                     <li><a href="index.html" class="glow">HOME</a></li> -
-                    <li><a href="#" class="glow">LINK</a></li> -
+                    <li><a href="events.html" class="glow">EVENTS</a></li> -
                     <li><a href="#" class="glow">LINK</a></li> -
                     <li><a href="#" class="glow">LINK</a></li> -
                     <li><a href="form.html" class="glow" id="contactForm">FORM</a></li>
@@ -43,5 +43,60 @@
     </div>
     <script src="ajax.js"></script>
     <script src="js.js"></script>
+
+        <script>
+        //grab audio element from DOM
+        var audioElem = document.getElementById('audioCtrl');
+        var trackTitle = document.getElementById('trackTitle');
+
+        //create array of objects withholding the information about tracks
+        var tracks = [
+            {artist:'JamesBlake', title:'LimitToYourLove', mime:'mp3', },
+            {artist:'JamesBlake', title:'Lindesfarne', mime:'mp3', }
+        ];
+        //two functions that set and play tracks
+        var i = 0;
+        var audioSrc = document.createElement('source');
+        function setTrack(){
+            audioLink = 'audio/'+tracks[i].artist+'-'+tracks[i].title+'.'+tracks[i].mime;
+            audioSrc.setAttribute('src', audioLink);
+            audioElem.appendChild(audioSrc);
+
+            trackName = tracks[i].artist+' - '+tracks[i].title;
+            trackTitle.innerHTML = trackName;
+
+            audioCtrl.load();
+            audioCtrl.play();
+            i++;
+        };
+        function nextTrack(){
+            //console.log(i);
+            if (i >= tracks.length) {
+                i = 0;
+            };
+            setTrack();
+        };
+
+        //grab elements from DOM and handle events on click
+        var play = document.getElementById('play');
+        var pause = document.getElementById('pause');
+        var next = document.getElementById('next');
+
+        play.addEventListener('click', function(){
+            audioCtrl.play();
+        }, false);
+        pause.addEventListener('click', function(){
+            audioCtrl.pause();
+        }, false);
+        next.addEventListener('click', function(){
+            nextTrack();
+        }, false);
+        
+        //onload function
+        window.onload = function(){
+            //on load play the first track
+            setTrack();
+        }
+    </script>
 </body>
 </html>
