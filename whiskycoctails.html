@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>PRISM Lounge & Club - Whisky Coctails Event</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+        window.onload = function(){
+            var imgNum = 0;
+            var imgArray = new Array();
+        
+            imgArray[imgNum++] = (new Image()).src = "images/millionaires_manhattan.jpg";
+            imgArray[imgNum++] = (new Image()).src = "images/prohibition_lemonade.jpg";
+            imgArray[imgNum++] = (new Image()).src = "images/top_mist_berry.jpg";
+            imgArray[imgNum++] = (new Image()).src = "images/top_mist_sunrise.jpg";
+            imgArray[imgNum++] = (new Image()).src = "images/wisers_spicedsour.jpg";
+            imgArray[imgNum++] = (new Image()).src = "images/wisers_spicedvanillaoldfashioned.jpg";
+            
+            var totalImages = imgArray.length;
+        
+            function getNextImage() {
+                
+                imgNum = (imgNum+1) % totalImages;
+                var new_image = imgArray[imgNum];
+                document.getElementById("slide").src = new_image;
+                
+            };
+            function getPrevImage() {
+                if(imgNum === 0){
+                    imgNum = totalImages - 1;
+                }else{
+                    imgNum = imgNum - 1;
+                };
+                var new_image = imgArray[imgNum];
+                document.getElementById("slide").src = new_image;
+            };
+            document.getElementById("prev").onclick = getPrevImage;
+            document.getElementById("next").onclick = getNextImage;
+        };
+    </script>
+</head>
+<body>
+	<div id="container">
+    
+    	<nav>
+        	<div class="menu">
+                <ul>
+                    <li><a href="index.html" class="glow">HOME</a></li> -
+                    <li><a href="events.html" class="glow">EVENTS</a></li> -
+                    <li><a href="#" class="glow">LINK</a></li> -
+                    <li><a href="#" class="glow">LINK</a></li> -
+                    <li><a href="form.html" class="glow" id="contactForm">FORM</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    	<header>
+			<img src="images/banner.png">
+        </header>
+        
+        <section class="content">
+            <h1>Try special whisky coctails</h1>
+            <h2>Prim's upcoming events</h2>
+        	<div id="slideshow">
+                <img src="images/millionaires_manhattan.jpg" id="slide" />
+                <a id="prev" class="slide_nav">
+                    Previous
+                </a>
+                <a id="next" class="slide_nav">
+                    Next
+                </a>
+            </div>
+            <div class="event_desc">
+                <h2>Whisky Coctails</h2>
+                <p>
+                    Whisky fremstilles af fermenteret byg, rug, hvede eller majs, der destilleres. Maltwhisky er lavet af maltet byg.
+                </p>
+                <p>
+                    Whisky er øl, der destilleres. Maltwhisky er typisk dobbeltdestilleret på kobberkedler. Whiskyen opbevares på fade "casks" af egetræ.
+                </p>
+                <p>
+                    Ud over de traditionelle aftapninger fra destillerierne findes også "uafhængige aftapninger". Det er whiskykøbmænd, der køber et eller flere fade hos destillerierne og opbevarer dem og sælger dem, som de vil. Det er derfor et anderledes produkt end standardproduktet.
+                </p>
+                <p>
+                    En whisky skal være på mindst 40% og mindst tre år gammel. Når den kommer fra fadet er den ofte på 50-60% Cask strength og fortyndes ofte til 42%-46%.
+                </p>
+            </div>
+        </section>
+        
+        <footer>
+        	<img src="images/footer.png">
+        </footer>
+    </div>
+    <script src="ajax.js"></script>
+</body>
+</html>
